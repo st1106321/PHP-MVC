@@ -67,7 +67,12 @@ class FoodManager extends Manager {
 
     public function deleteFav($userId, $objId) {
         $sql = "DELETE FROM users_aliments WHERE user_id = {$userId} AND aliment_id = {$objId}";
-        return ($this->isQueryOk($sql, "Counld not add fav."));
+        return ($this->isQueryOk($sql, "Counld not delete fav."));
+    }
+
+    public function deleteAllFav($objId) {
+        $sql = "DELETE FROM users_aliments WHERE aliment_id = {$objId}";
+        return ($this->isQueryOk($sql, "Counld not delete all favs."));
     }
 
     public function listByFav($user) {
@@ -77,5 +82,6 @@ class FoodManager extends Manager {
         return ($this->isQueryOk($sql, "Counld not find all favs."));
         
     }
+
 }
 

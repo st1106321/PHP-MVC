@@ -69,6 +69,8 @@ $sql = "CREATE TABLE aliments_specifics (
 
 echo ($conn->query($sql) === TRUE) ? "Table 'aliments_specifics' created successfully<br/>" : "Error 'aliments_specifics' creating table: {$conn->error}<br/>";
 
+echo "<a href=\"index.php\">Back</a>"
+
 $conn->close();
 
 

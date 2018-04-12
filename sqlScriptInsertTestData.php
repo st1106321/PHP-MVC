@@ -38,7 +38,7 @@ for ($i = 0, $len = sizeof($nameArr); $i < $len; $i++) {
 }
 
 echo "New records created successfully";
-
+echo "<a href=\"index.php\">Back</a>"
 /* Close statement */
 $stmt->close();
 /* Close connection */

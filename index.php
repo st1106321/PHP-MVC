@@ -63,10 +63,11 @@ try {
             } elseif ($_GET['action'] == 'editFav') {
                 if (!empty($_GET['favId'])) {
                     if (!empty($_GET['isFav'])) {
-                        $foodController->deleteFav($_SESSION['userInfo']['id'], htmlspecialchars($_GET['favId']));
+                        $foodController->deleteFav(htmlspecialchars($_GET['favId']));
                     } else {
-                        $foodController->addFav($_SESSION['userInfo']['id'], htmlspecialchars($_GET['favId']));
+                        $foodController->addFav(htmlspecialchars($_GET['favId']));
                     }
+                    
                 }
             } elseif ($_GET['action'] == 'listByFav') {
                 $foodController->listByFav($_SESSION['userInfo']['id']);
