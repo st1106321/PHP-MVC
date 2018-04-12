@@ -9,7 +9,8 @@ class Manager {
     private $connect;
 
     /* Connect to database using default values */
-    protected function setConnection($servername = "localhost", $username = "user1", $password = "user1", $dbname = "php-db"){
+    protected function setConnection($servername = "127.0.0.1:50426", $username = "azure", $password = "6#vWHD_$", $dbname = "localdb") {        
+    // protected function setConnection($servername = "localhost", $username = "user1", $password = "user1", $dbname = "php-db"){
     // protected function setConnection($servername = "localhost", $username = "user2", $password = "", $dbname = "php-db2"){
         $this->connect = new mysqli($servername, $username, $password, $dbname);
         if ($this->connect->connect_error) {

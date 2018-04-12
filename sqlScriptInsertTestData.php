@@ -1,13 +1,10 @@
 <?php
 
 /* db variables */
-$servername = "localhost";
-$username = "user1";
-$password = "user1";
-$dbname = "php-db";
-// $username = "user2";
-// $password = "";
-// $dbname = "php-db2";
+$servername = "127.0.0.1:50426";
+$dbname = "localdb";
+$username = "azure";
+$password ="6#vWHD_$";
 
 /* Create connection */
 $conn = new mysqli($servername, $username, $password, $dbname);
