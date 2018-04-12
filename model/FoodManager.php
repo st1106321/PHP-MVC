@@ -70,5 +70,12 @@ class FoodManager extends Manager {
         return ($this->isQueryOk($sql, "Counld not add fav."));
     }
 
+    public function listByFav($user) {
+        $sql = "SELECT id, name, kcal, proteins, lipids, carbohydrate, fibers
+                FROM aliments INNER JOIN users_aliments ON users_aliments.aliment_id = aliments.id
+                WHERE users_aliments.user_id = {$user}";
+        return ($this->isQueryOk($sql, "Counld not find all favs."));
+        
+    }
 }
 

@@ -79,19 +79,19 @@ class FoodController {
     public function addFav($userId, $ObjId) {
         $favs = $this->getFavs();        
         $this->foodManager->addFav($userId, $ObjId);
-        header('Location: ' . $_SERVER['HTTP_REFERER']);    }
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+    }
 
     public function deleteFav($userId, $ObjId) {
         $this->foodManager->deleteFav($userId, $ObjId);
-        header('Location: ' . $_SERVER['HTTP_REFERER']);    }
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
+    }
 
-
-
-
-
-
-
-
-
+    public function listByFav($user) {
+        $food = $this->foodManager->listByFav($user);
+        if ( !($data = $food->fetch_assoc()) ) $data = "No data available";
+        $favs = $this->getFavs();
+        require('view/frontend/listFood.php');
+    }
 }
 

@@ -67,8 +67,9 @@ try {
                     } else {
                         $foodController->addFav($_SESSION['userInfo']['id'], htmlspecialchars($_GET['favId']));
                     }
-                    
                 }
+            } elseif ($_GET['action'] == 'listByFav') {
+                $foodController->listByFav($_SESSION['userInfo']['id']);
             }
         }
     } elseif (isset($_GET['action'])) { /* if user not connected he can register or login */
