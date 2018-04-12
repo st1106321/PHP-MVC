@@ -16,7 +16,7 @@ class UserManager extends Manager {
     /* creates one user to the database */
     public function addUserToDb($email, $pswd) {
         // $time = time();
-        $sql = "INSERT INTO users(email, pswd, regDate) VALUES ('{$email}', '{$pswd}')";
+        $sql = "INSERT INTO users(email, pswd) VALUES ('{$email}', '{$pswd}')";
         return ($this->isQueryOk($sql, "Error: Couldn\'t add user."));
     }
 
