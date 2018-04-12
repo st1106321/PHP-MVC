@@ -1,0 +1,4 @@
+AuthName "please enter your credentials"
+AuthType Basic
+AuthUserFile "/home/site/wwwroot/.htpasswd"
+Require valid-user
