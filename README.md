@@ -21,7 +21,7 @@ Change database values in sqlScriptCreateTable.php, sqlScriptInsertTestData.php,
 
 ![Relations-DB](relations-db.png)
 
-## App's Screenshots
+## Application's Screenshots
 
 ### Login page sample
 ![login-page](login-page.png)
