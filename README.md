@@ -23,10 +23,10 @@ Change database values in sqlScriptCreateTable.php, sqlScriptInsertTestData.php,
 
 ## App's Screenshots
 
-![login page](login-page.png)
-![main page](main-page.png)
-![fav page](fav-page.png)
-![add page](add-page.png)
-![edit page](edit-page.png)
+![login-page](login-page.png)
+![main-page](main-page.png)
+![fav-page](fav-page.png)
+![add-page](add-page.png)
+![edit-page](edit-page.png)
 
 
