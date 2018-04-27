@@ -23,6 +23,8 @@ Change database values in sqlScriptCreateTable.php, sqlScriptInsertTestData.php,
 
 ## Application's Screenshots
 
+<img src='login-page.png'/>
+
 ### Login page sample
 ![login-page](login-page.png)
 
