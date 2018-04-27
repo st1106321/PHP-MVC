@@ -15,5 +15,8 @@
         <?php if (isset($_SESSION['userInfo']['id'])) include 'view/frontend/navBar.php'; ?>
         <div><br><br></div>
         <div class="container"><?= $content ?></div>
+        <script src="vendor/bootstrap.min.js"></script>
+        <script src="vendor/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     </body>
 </html>
